@@ -1,0 +1,84 @@
+/* tokens.css — design system custom properties */
+:root {
+  /* ── Dark Backgrounds (deep vintage navy — deepened for contrast) ── */
+  --color-black:       #040B14;   /* footer, deepest */
+  --color-bg-deepest:  #081320;   /* hero, testimonials */
+  --color-bg-dark:     #0C1B2C;   /* products section */
+  --color-bg-card:     #122539;   /* card surfaces */
+  --color-bg-surface:  #1A3149;   /* elevated elements */
+  --color-border:      #274664;   /* borders — brighter for visible separation */
+  --color-ash:         #7E8794;   /* inactive UI markers on dark (carousel dots) */
+
+  /* ── Light Backgrounds (warm aged-paper cream — vintage warmth) ── */
+  --color-cream:       #F5ECD7;   /* primary vintage paper */
+  --color-white:       #FBF4E4;   /* about section — warm ivory */
+  --color-off-white:   #F0E4CB;   /* benefits section — deeper parchment */
+
+  /* ── Gold (richer vintage foil) ── */
+  --color-gold:        #C6A24A;   /* primary accent */
+  --color-gold-light:  #E6CB7C;   /* hover / lighter variant */
+  --color-gold-dim:    #8C6F38;   /* borders, decorative */
+  --color-gold-subtle: rgba(198, 162, 74, 0.14); /* bg tints */
+
+  /* ── Claret / Oxblood (vintage tobacco-label red — secondary accent) ── */
+  --color-claret:      #8A2433;
+  --color-claret-light:#A9333F;
+
+  /* ── Text ── */
+  --color-text-primary:   #14212E;   /* body text on cream — near-black, strong */
+  --color-text-secondary: #4A4034;   /* warm sepia-charcoal secondary on cream */
+  --color-text-muted:     #7A6B54;   /* muted warm on light */
+  --color-text-light:     #F5EEDC;   /* primary text on dark — warm ivory */
+  --color-text-dim:       #BEC9D4;   /* secondary text on dark — brightened for contrast */
+
+  /* ── Newsletter section ── */
+  --color-cta-bg:      #060F1A;   /* deepest navy for CTA band */
+
+  /* ── Typography ── */
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+
+  /* ── Type scale (fluid, clamp scaling) ── */
+  --text-eyebrow: 0.75rem;     /* 12px */
+  --text-sm:      0.9375rem;   /* 15px */
+  --text-body:    1.0625rem;   /* 17px */
+  --text-lg:      1.25rem;     /* 20px */
+  --text-h3:      1.75rem;     /* 28px — serif display */
+  --text-h2:      clamp(2.5rem, 4.5vw, 3.75rem);
+  --text-h1:      clamp(3.5rem, 7.5vw, 7rem);
+
+  /* ── Letter spacing ── */
+  --tracking-tight:   -0.02em;
+  --tracking-snug:    -0.01em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.08em;
+  --tracking-widest:   0.22em;
+
+  /* ── Spacing (8px base unit, generous whitespace) ── */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 7rem;
+  --space-3xl: 10rem;
+
+  /* ── Layout ── */
+  --container-max: 1280px;
+  --container-pad: 1.5rem;
+  --nav-height:    72px;
+
+  /* ── Effects ── */
+  --radius:       10px;
+  --radius-md:    16px;
+  --radius-pill:  980px;
+  --transition:   0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --shadow-card:  0 8px 40px rgba(0, 0, 0, 0.55);
+  --shadow-card-lift: 0 24px 56px rgba(0, 0, 0, 0.45);
+  --shadow-gold:  0 0 24px rgba(198, 162, 74, 0.22);
+
+  /* ── Gold gradient (used on primary buttons & accents) ── */
+  --gradient-gold: linear-gradient(135deg, #B8923C 0%, #E6CB7C 50%, #B8923C 100%);
+  --gradient-dark: linear-gradient(180deg, #0C0C0C 0%, #141414 100%);
+  --gradient-claret: linear-gradient(135deg, #7A1E2C 0%, #A6303F 50%, #7A1E2C 100%);
+}
