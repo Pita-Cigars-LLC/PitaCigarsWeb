@@ -1,2 +1,3 @@
 - [Pita reference sync](pita-reference-sync.md) — use the deployed `main` version; the repository default branch may be an older prototype.
 - [GitHub repository ownership](github-repository-ownership.md) — transfers leave redirects; verify canonical owner before pushes.
+- [GitHub Actions org policy](github-actions-org-policy.md) — org PR-creation policy overrides repo settings; built-in-token PRs can require workflow approval.

@@ -2,7 +2,7 @@ name: Site CI
 
 on:
   pull_request:
-    branches: [development]
+    branches: [development, main]
   push:
     branches: [development, main]
 
