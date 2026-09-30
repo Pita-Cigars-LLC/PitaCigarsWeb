@@ -1,0 +1,39 @@
+name: Release source policy
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [development]
+
+permissions:
+  contents: read
+
+jobs:
+  release-source:
+    name: release-source
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require development as the source of main release PRs
+        env:
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          PR_HEAD_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
+            if [[ "$GITHUB_REF_NAME" != "development" ]]; then
+              echo "This check only runs on development pushes."
+              exit 1
+            fi
+          elif [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            if [[ "$GITHUB_BASE_REF" != "main" ||
+                  "$PR_HEAD_REF" != "development" ||
+                  "$PR_HEAD_REPOSITORY" != "$GITHUB_REPOSITORY" ]]; then
+              echo "Only a PR from this repository's development branch may target main."
+              exit 1
+            fi
+          else
+            echo "Unexpected event: $GITHUB_EVENT_NAME"
+            exit 1
+          fi
