@@ -14,7 +14,7 @@ GitHub delivers notifications according to **each person's** watch and notificat
 | Push or merge into `main` | `site-checks` runs again on the merged branch. There is no separate release-announcement service or automatic GitHub Release. | Repository **Actions** tab and commit checks. |
 | Comments, mentions, issues, or releases (if used) | GitHub may notify participants or watchers according to their personal settings. | [GitHub notifications inbox](https://github.com/notifications). |
 
-The current branch-protection rules require `site-checks` on `development`, and both `site-checks` and `release-source` on `main`, plus an approving code-owner review. Checks control **whether a PR may merge**; notification preferences control **who hears about it**. A PR author cannot approve their own PR. See [CONTRIBUTING.md](CONTRIBUTING.md) for the branch and reviewer process.
+The current branch-protection rules require `site-checks` on `development`, and both `site-checks` and `release-source` on `main`, normally plus an approving code-owner review. `@ed1868` alone has a review-requirement bypass and can merge without a recorded approval; GitHub still does not allow the PR author to approve their own PR. A bypassed review does not produce an approving-review notification. Checks control **whether a PR may merge**; notification preferences control **who hears about it**. See [CONTRIBUTING.md](CONTRIBUTING.md) for the branch, reviewer, and bypass process.
 
 ## Set up your own GitHub alerts
 
