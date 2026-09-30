@@ -9,3 +9,5 @@ python3 -m http.server 5000 --bind 0.0.0.0
 ```
 
 Open the homepage at `/`. The site includes an age-verification gate before the content is available.
+
+For GitHub branches, reviews, and releases, follow [CONTRIBUTING.md](CONTRIBUTING.md). Do not push directly to the protected `development` or `main` branches.
