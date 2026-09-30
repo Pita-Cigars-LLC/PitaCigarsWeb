@@ -1,0 +1,24 @@
+name: Site CI
+
+on:
+  pull_request:
+    branches: [development]
+  push:
+    branches: [development, main]
+
+permissions:
+  contents: read
+
+jobs:
+  site-checks:
+    name: site-checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check JavaScript syntax
+        run: node --check js/main.js
+      - name: Test static pages and assets
+        run: python3 -m unittest discover -s tests -v

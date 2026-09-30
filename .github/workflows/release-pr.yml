@@ -1,0 +1,44 @@
+name: Open release PR
+
+on:
+  push:
+    branches: [development]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  release-source:
+    name: release-source
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open a release PR when development is ahead of main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_REF_NAME" != "development" ]]; then
+            echo "Release PRs must originate from development."
+            exit 1
+          fi
+
+          ahead=$(gh api "repos/$GH_REPO/compare/main...development" --jq '.ahead_by')
+          if (( ahead == 0 )); then
+            echo "No new changes to release."
+            exit 0
+          fi
+
+          open_count=$(gh pr list --base main --head development --state open --json number --jq 'length')
+          if (( open_count == 0 )); then
+            gh pr create \
+              --base main \
+              --head development \
+              --title "Release development to main" \
+              --body "Review the changes from development. Only @ed1868 can approve this release PR; merge it after the required checks pass."
+          else
+            echo "An open development-to-main release PR already exists."
+          fi
