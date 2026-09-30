@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.pitacigars.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.pitacigars.com/about/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/products/</loc><priority>0.9</priority></url>
-  <url><loc>https://www.pitacigars.com/premium-cigars/</loc><priority>0.9</priority></url>
-  <url><loc>https://www.pitacigars.com/bundles/</loc><priority>0.9</priority></url>
-  <url><loc>https://www.pitacigars.com/retailers/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/contact/</loc><priority>0.7</priority></url>
-  <url><loc>https://www.pitacigars.com/product/torpedo-habano/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/product/torpedo-connecticut/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/product/robusto-sumatra/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/product/robusto-indonesian/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/product/churchill-sumatra/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/product/churchill-indonesian/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pitacigars.com/product/toro-habano/</loc><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/about/</loc><lastmod>2026-07-06T01:04:03Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/boxes/</loc><lastmod>2026-07-06T01:04:03Z</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.pitacigars.com/bundles/</loc><lastmod>2026-07-06T13:13:52Z</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.pitacigars.com/contact/</loc><lastmod>2026-09-28T13:59:08Z</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.pitacigars.com/</loc><lastmod>2026-09-29T23:51:31Z</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.pitacigars.com/premium-cigars/</loc><lastmod>2026-07-06T01:04:03Z</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.pitacigars.com/product/box-presidente-sumatra/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/box-presidente-indonesian/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/box-robusto-sumatra/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/box-robusto-indonesian/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/torpedo-habano/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/torpedo-connecticut/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/robusto-sumatra/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/robusto-indonesian/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/churchill-sumatra/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/churchill-indonesian/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/product/toro-habano/</loc><lastmod>2026-09-29T04:04:30Z</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.pitacigars.com/products/</loc><lastmod>2026-09-29T04:26:04Z</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.pitacigars.com/retailers/</loc><lastmod>2026-07-06T01:04:03Z</lastmod><priority>0.8</priority></url>
 </urlset>
